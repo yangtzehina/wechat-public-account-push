@@ -69,6 +69,9 @@ const USER_CONFIG = {
       useTemplateId: '0q4IBcE-Dv7Tq2wlTBJP-3x9yNCYfw3JRfq3hHDWqgI',
       // 新历生日, 仅用作获取星座运势, 格式必须为MM-DD
       horoscopeDate: '01-21',
+      // 获取什么时候的星座运势，可选：['今日', '明日', '本周', '本月', '今年'], 留空则随机
+      horoscopeDateType: '今日',
+      
       festivals: [
         // 注意：此条配置日期为阴历日期，因为`type`中 “生日” 之前有 * 符号
         {
