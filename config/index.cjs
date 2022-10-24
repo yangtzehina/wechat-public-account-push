@@ -91,6 +91,37 @@ const USER_CONFIG = {
         { keyword: 'love_day', date: '2022-08-04' },
       ],
     },
+    {
+      // 想要发送的人的名字
+      name: '江帅',
+      // 使用微信测试号：扫码关注你的微信测试号后生成的一段字符串，在测试号后台能看到
+      id: 'oum2_6nkFAJpXnSblqsXkL0HDd10',
+      // 使用微信测试号：你想对他发送的模板消息的模板ID
+      useTemplateId: 'bZLx7UoYk5gKjZzXmldXHhW8UzWuQ6OHtn2lZ6aYIlQ',
+      // 新历生日, 仅用作获取星座运势, 格式必须为MM-DD
+      horoscopeDate: '06-21',
+      // 获取什么时候的星座运势，可选：['今日', '明日', '本周', '本月', '今年'], 留空则随机
+      horoscopeDateType: '今日',
+      
+      festivals: [
+        // 注意：此条配置日期为阴历日期，因为`type`中 “生日” 之前有 * 符号
+        {
+          type: '*生日', name: '鹿宝', year: '1997', date: '01-21',
+        },
+        // 注意：此条配置日期为阳历日期，因为`type`中 “生日” 之前没有 * 符号
+        {
+          type: '生日', name: '江帅', year: '1993', date: '06-21',
+        },
+        {
+          type: '节日', name: '相恋纪念日', year: '2022', date: '08-04',
+        },
+      ],
+      // 我们在一起已经有xxxx天了的配置
+      customizedDateList: [
+        // 在一起的日子
+        { keyword: 'love_day', date: '2022-08-04' },
+      ],
+    },
   ],
 
 
